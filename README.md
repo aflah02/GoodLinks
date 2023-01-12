@@ -10,3 +10,8 @@
 ## Nested Dict to df
 
 - https://stackoverflow.com/a/54300940/13858953
+
+## List all dirs in a dir with size
+
+- du -skh * | sort -hr 
+- https://stackoverflow.com/questions/1019116/using-ls-to-list-directories-and-their-total-sizes
