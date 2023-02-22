@@ -15,3 +15,13 @@
 
 - du -skh * | sort -hr 
 - https://stackoverflow.com/questions/1019116/using-ls-to-list-directories-and-their-total-sizes
+
+## Identify in which screen instance a process is running
+
+```
+To find the screen instance in which PID 351 is running, search the PID 351 environment for the string "STY=":
+
+$ grep -z '^STY=' /proc/351/environ
+```
+
+https://unix.stackexchange.com/a/181102/492831
