@@ -25,3 +25,9 @@ $ grep -z '^STY=' /proc/351/environ
 ```
 
 https://unix.stackexchange.com/a/181102/492831
+
+## Kill all screen sessions
+```
+pkill screen 
+```
+Ref - https://unix.stackexchange.com/questions/94527/how-do-i-kill-all-screens
