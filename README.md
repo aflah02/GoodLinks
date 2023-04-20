@@ -31,3 +31,29 @@ https://unix.stackexchange.com/a/181102/492831
 pkill screen 
 ```
 Ref - https://unix.stackexchange.com/questions/94527/how-do-i-kill-all-screens
+
+## How to have fullsize (2 column figure)
+
+Use figure* - 
+
+```
+\documentclass{article}
+\usepackage[showframe]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{multicol}% http://ctan.org/pkg/multicols
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+\begin{document}
+\begin{multicols}{2}
+  \lipsum[1-2]
+\end{multicols}
+\begin{figure*}[h]
+  \includegraphics[width=\textwidth,height=4cm]{tiger}
+  \caption{This is a tiger.}
+\end{figure*}
+\begin{multicols}{2}
+  \lipsum[3-4]
+\end{multicols}
+\end{document}
+```
+
+Ref - https://tex.stackexchange.com/a/30988
